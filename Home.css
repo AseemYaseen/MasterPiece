@@ -2,8 +2,12 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    text-decoration: none;
 }
-
+body{
+    background:rgb(0, 0, 0);
+  
+}
 .Head{
     height: 100vh;
     width: 100%;
@@ -67,12 +71,13 @@ nav ul li{
     width: 200px;
 }
 .SearchBar a .fas{
-    color: rgb(255, 0, 51);
+    color: orange;
     font-size: 18px;
 }
 
 .WelcomeContent{
     text-align: center;
+    font-family: 'Libre Baskerville', serif;
   
 }
 
@@ -94,6 +99,11 @@ nav ul li{
     font-size: 55px;
 }
 
+.Welcome2 span{
+    color: rgb(255, 174, 0);
+    
+}
+
 .WelcomeContent span a {
     text-decoration: none;
     display: inline-block;
@@ -102,7 +112,7 @@ nav ul li{
     border: 2px solid white;
     padding: 14px 70px;
     border-radius: 15px;
-    margin-top: 20px;
+    margin-top: 55px;
     transition: 0.4s;
 }
 
@@ -135,9 +145,172 @@ z-index: -1;
     
 }
 
+                        /*               Section 1                */
 
-.section1{
+section h2{
+    color: white;
+    text-align: center;
+    margin-bottom: 120px;
+    font-size: 55px;
+}
+section h2 span{
+    color: orange;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: linear-gradient(0deg, rgb(245, 177, 32) 0%, rgba(164,117,5,1) 100%); 
+    /* background: rgb(240, 238, 238); */
+    width: 400px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.card:hover{
+    transition: 0.8s;
+    scale: 1.05;
+}
+
+.card a {
+    color: rgb(240, 238, 238);
+}
+.card a p {
+    padding: 2px 20px 15px 20px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+
+.cardImage{
+    height: 300px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.Pic1{
+    background-image: url(./MasterPiece-Pic/Amman1.jpg);
+
+}
+.Pic2{
+    background-image: url(./MasterPiece-Pic/Aqaba1.jpg);
+
+}
+.Pic3{
+    background-image: url(./MasterPiece-Pic/Irbid1.jpg);
+
+}
+
+
+.section1-2{
+    padding-top: 10%;
+    color:white;
+    text-align: center;
+    font-size: 30px;
+}
+.section1-2 span{
+    color: rgb(255, 174, 0);
+}
+ .grid2 {
     display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 50px;
+    padding: 10px;
+    padding-top: 50px;
+  }
+  .rectangle, .square {
+    border-radius: 20px;
+   
+  }
+  .rectangle {
+    background-image: url(./MasterPiece-Pic/amman2.jpg);
+    background-size: cover;
+    grid-row: 1/4;
+    grid-column: 2/6;
+  }
+  .square {
+    height: 300px;
+    color: white;
+    font-size: 18px;
+  }
+  .offerG1{
+    background-image: url(./MasterPiece-Pic/SeasHotel.jpg);
+    background-size: cover;
+    grid-row: 1/2;
+    grid-column: 6/8;
+  }
+
+  .offerG2{
+    background-image: url(./MasterPiece-Pic/TajMall.jpg);
+    background-size: cover;
+    grid-row: 2/4;
+    grid-column: 6/8;
+  }
+
+  .offerG3{
+    background-image: url(./MasterPiece-Pic/bus1.jpg);
+    background-size: cover;
+    grid-row: 4/5;
+    grid-column: 6/8;
+  } 
+  .offerG4{
+    background-image: url(./MasterPiece-Pic/orange2.jpg);
+    background-size: cover;
+    text-align: center;
+    font-size: 25px;
+    grid-row: 4/5;
+    grid-column: 2/6;
+    color: rgb(139, 2, 2);
+    font-weight: 700;
+  } 
+
+  .offerG4 a{
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    border: 2px solid rgb(255, 248, 248);
+    padding: 8px 70px;
+    border-radius: 15px;
+    margin-top: 10%;
+    transition: 0.4s;
+    font-weight: 600;
+  }
+
+  .offerG4 a:hover{
+    cursor: pointer;
+    background: white;
+    color: rgb(255, 174, 0);
+  }
+
+  .offerG4 p{
+    padding: 5% 0 0 0 ;
+  }
+  
+  .offerG4 span{
+    color: rgb(255, 255, 255);
+  }
+
+.Sec2headers{
+    text-align: left;
+    font-size: 20px;
+    height: 288px;
+    margin-bottom: 15px;
+    /* background-size: cover;
+    border-radius: 15px 15px 0 0; */
+}
+
+
+
+                        /*               Section 2                */
+
+
+.ReviewsSection{
     height: 1000px;
-    background-color:bisque;
 }
