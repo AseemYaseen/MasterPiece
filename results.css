@@ -47,7 +47,20 @@ nav ul li{
 }
 nav ul li a{
     color: white;
+    transition: 0.5s;
 }
+
+nav ul li a:hover, .active{
+    color: orange;
+}
+.loginSty{
+    color: white;
+    transition: 0.5s;
+}
+.loginSty:hover{
+ color: orange;
+}
+
 /* /////////////////////////////////////////////////////////////////////// */
 .headerResults{
     padding: 2% 0 1.25% 0;
@@ -104,7 +117,7 @@ padding: 0 0 5% 0;
 
 .result1 h2 {
     padding: 1% 0 0 0;
-    font-size: 26px;
+    font-size: 38px;
 }
 
 .resultsCenter{
@@ -575,19 +588,17 @@ opacity: 1;
 .tripFlex{
     display: flex;
     width: 35%;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 10px auto;
     border-radius: 18px;
     /* height: 280px; */
     background-color: rgb(0, 29, 110);
     justify-content: center;
-
 
 }
 
 .tripBox{
     color: white;
     margin: 25px 0 0 0;
-    font-weight: 600;
     font-size: 1.3rem;
 }
 
@@ -606,7 +617,6 @@ opacity: 1;
     transition: 0.4s;
     font-weight: 600;
     margin: 15px 0 30px 0;
-    
 }
 .contactApar3:hover{
     cursor: pointer;
@@ -670,4 +680,30 @@ color: white
     color: #ffae00;
 }
 
+/* //////////////////////////////// */
+
+.up {
+    position: fixed;
+    bottom: 100px;
+    right: -70px;
+    background-color: #1a4181;
+    color: #DDD;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 7px;
+    border-radius: 4px;
+    font-family: Arial,Tahoma;
+    cursor: pointer;
+
+ }
+
+ .up img{
+    width: 100px;
+    height: 70px;
+
+ }
+
+ .up.show {
+    right: 35px;
+ }
 

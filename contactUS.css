@@ -57,6 +57,14 @@ nav ul li a{
 nav ul li a:hover, .active{
     color: orange;
 }
+.loginSty{
+    color: white;
+    transition: 0.5s;
+}
+.loginSty:hover{
+ color: orange;
+}
+
 .Welcome{
     text-align: center;
     margin: 7% 0 0 0;

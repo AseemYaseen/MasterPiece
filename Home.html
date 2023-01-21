@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/636cf23d2b.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="Home.css">
-        <title>Document</title>
+        <title>Travelers-Jo</title>
     </head>
     <body>
         <div class="Head">
@@ -142,5 +142,20 @@
                     </div>
                 </div>
             </footer>
+            <span class="up"> <i class="fa-solid fa-up-long"></i></span>
+            <script>
+                let span = document.querySelector(".up");
+
+window.onscroll = function () {
+this.scrollY >= 1000 ? span.classList.add("show") : span.classList.remove("show");
+};
+   
+span.onclick = function() {
+    window.scrollTo({
+    top:0,
+    behavior : "smooth",
+    }); 
+}
+            </script>
         </body>
     </html>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/636cf23d2b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./results.css">
-    <title>Document</title>
+    <title>Results</title>
 </head>
 <body>
     <section>
@@ -26,7 +26,7 @@
                         <i class="fas fa-search"></i>
                     </a>
                     </div> -->
-                    <li>Account</li>
+                    <li><a class="loginSty" href="./login.html">Account</a></li>
             </nav>
         </div>
     </section>
@@ -36,8 +36,7 @@
             <p>100 - 300 JOD</p>
             <a href="./Home.html">Want to make another choice?</a>
         </div>
-                <section class="section2Results">
-                    
+                <section class="section2Results">    
                 <div class="result1">
                     <h2>Apartments</h2>
                     <div class="resultsCenter">
@@ -64,13 +63,6 @@
                             <p class="priceApar">For <span>31 JOD</span> per nigh</p>
                             </figcaption>
                         </figure>
-                        <figure>
-                            <img class="imageApar" src="./MasterPiece-Pic/Results/apar3.png" alt="Apar">
-                            <figcaption><p class="descriptionApar">2 bed room / 1 bath room / air-condition/ Tv / small kitchen</p>
-                            <p class="locationApar">Located in Al-Moqablien area / St 11 / Building number 21</p>
-                            <p class="priceApar">For <span>31 JOD</span> per nigh</p>
-                            </figcaption>
-                        </figure>
                     </div>
                     <p class="avalSure">did you like a place and want to make sure it's avalible?</p>
                     <a href="./contact_us.html" class="contactApar">Contact us</a>
@@ -81,7 +73,6 @@
             <div class="choices2">
                 <p>it's time to take a look where can I <span>EAT</span> and stay within my budget !</p>
             </div>
-
             <section class="section2Results">
                 <div class="result1">
                     <h2>Restaurants</h2>
@@ -263,5 +254,21 @@
             </div>
         </div>
     </footer>
+
+                <span class="up"> <i class="fa-solid fa-up-long"></i></span>
+                <script>
+                    let span = document.querySelector(".up");
+
+            window.onscroll = function () {
+            this.scrollY >= 1000 ? span.classList.add("show") : span.classList.remove("show");
+            };
+
+            span.onclick = function() {
+            window.scrollTo({
+            top:0,
+            behavior : "smooth",
+            }); 
+            }
+    </script>
     </body>
 </html>
